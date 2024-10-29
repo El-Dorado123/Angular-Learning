@@ -1,0 +1,21 @@
+<h1 style="text-align: center;">Switch Case</h1>
+
+<!-- <h4>Write a program to Calculate Greatest Among Three Numbers </h4> -->
+
+<span>Enter Month Number : </span>
+<input type="number" #mon (input)="setMonth(mon.value)" placeholder="Enter Month Number" >
+<div [ngSwitch]="month">
+    <p *ngSwitchCase="'1'">January</p>
+    <p *ngSwitchCase="'2'">February</p>
+    <p *ngSwitchCase="'3'">march</p>
+    <p *ngSwitchCase="'4'">April</p>
+    <p *ngSwitchCase="'5'">May</p>
+    <p *ngSwitchCase="'6'">June</p>
+    <p *ngSwitchCase="'7'">July</p>
+    <p *ngSwitchCase="'8'">August</p>
+    <p *ngSwitchCase="'9'">September</p>
+    <p *ngSwitchCase="'10'">October</p>
+    <p *ngSwitchCase="'11'">November</p>
+    <p *ngSwitchCase="'12'">December</p>
+    <p *ngSwitchDefault>Invalid Month</p>
+</div>

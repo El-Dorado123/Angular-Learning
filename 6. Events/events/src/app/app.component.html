@@ -1,0 +1,65 @@
+<h1 style="text-align: center;">Events</h1>
+
+<p>An Events in AngularJS can be used to perform particular tasks, based on the action taken. Both Angular Event & the HTML Event will be executed & will not overwrite with an HTML Event. It can be added using the Directives mentioned below:
+<br/>
+  <b>ng-mousemove</b>: The movement of the mouse leads to the execution of the event.<br/>
+  <b>ng-mouseup</b>: Movement of the mouse upwards leads to the execution of the event.<br/>
+  <b>ng-mousedown</b>: Movement of the mouse downwards leads to the execution of the event.<br/>
+  <b>ng-mouseenter</b>: Click of the mouse button leads to the execution of the event.<br/>
+  <b>ng-mouseover</b>: Hovering the mouse leads to the execution of the event.<br/>
+  <b>ng-cut</b>: Cut operation leads to the execution of the event.<br/>
+  <b>ng-copy</b>: Copy operation leads to the execution of the event.<br/>
+  <b>ng-keypress</b>: Press of key leads to the execution of the event.<br/>
+  <b>ng-keyup</b>: Press of upward arrow key leads to the execution of the event.<br/>
+  <b>ng-keydown</b>: Press of downward arrow key leads to the execution of the event.<br/>
+ <b> ng-click</b>: Single click leads to the execution of the event.<br/>
+  <b>ng-dblclick</b>: Double click leads to the execution of the event.<br/>
+  <b>ng-blur</b>: Fired when an HTML element loses its focus.<br/>
+  <b>ng-change</b>: It is used whenever the value of an input element changes.<br/>
+  <b>ng-focus</b>: It is used to apply custom behavior when an element is focused.<br/>
+  <b>ng-paste</b>: It is used to specify custom behavior functions when the text in input fields is pasted into an HTML element.<br/>
+ <b> ng-mouseleave</b>: It is used to apply custom behavior when a mouse-leave event occurs on a specific HTML element.
+</p>
+
+<p><b>Click</b></p>
+<button (click)="getData('Click')">Click</button>
+
+<p><b>KeyUp : </b></p>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="keyup">
+
+
+<p><b>KeyDown : </b></p>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="keyup">
+
+<p><b>KeyPress : </b></p>
+<input type="text" #box2 (keypress)="getData(box2.value)" placeholder="ng-keyup">
+<br>
+<br>
+<span (mousemove)="getData('Mouse-Move')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseMove</b></span>
+<br>
+<br>
+<span (mouseup)="getData('Mouse-Up')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseUp</b></span>
+<br>
+<br>
+<span (mousedown)="getData('Mouse-Down')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseDown</b></span>
+<br>
+<br>
+<span (mouseover)="getData('Mouse-Over')" style="height:100px;width: 100px; border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseOver</b></span>
+<br>
+<br>
+<span (mouseenter)="getData('Mouse-Enter')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseEnter</b></span>
+<br>
+<br>
+<span (mouseleave)="getData('Mouse-Leave')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>MouseLeave</b></span>
+<br>
+<br>
+<span (dblclick)="getData('Double-Click')" style="border:1px solid black;border-radius: 10px;padding: 5px;cursor: pointer;"><b>DoubleClick</b></span>
+<br>
+<br>
+<input type="text" #blur (blur)="getData(blur.value)" placeholder="Blur">
+<br>
+<br>
+<input type="text" #change (change)="getData(change.value)" placeholder="Change">
+<br>
+<br>
+<input type="text" #inp (input)="getData(inp.value)" placeholder="Input">

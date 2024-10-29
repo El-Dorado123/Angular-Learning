@@ -1,0 +1,12 @@
+<h1 style="text-align: center;">For Loop</h1>
+<h2>Print Number from 1 to 10</h2>
+<span *ngFor="let num of  numArray">{{num}}&nbsp;&nbsp;</span>
+<br/>
+<br/>
+<h2>Print Vowel </h2>
+<span *ngFor="let vowel of charArray">{{vowel}}&nbsp;&nbsp;</span>
+<h2>Print Details of Users</h2>
+<span *ngFor="let user of users"><b>Name : </b>{{user.name}}&nbsp;&nbsp;<b>Email : </b>{{user.email}}&nbsp;&nbsp;<b>Phone : </b>{{user.phone}}<br/><br/></span>
+<h1 style="text-align: center;">Nested For Loop</h1>
+<h2>Print Details of Users</h2>
+<span *ngFor="let user of users"><b>Name : </b>{{user.name}}&nbsp;&nbsp;<b>Email : </b>{{user.email}}&nbsp;&nbsp;<b>Phone : </b>{{user.phone}}&nbsp;&nbsp;<b>SocialAccount : </b><span *ngFor="let social of user.socialAccount">{{social}}&nbsp;&nbsp;</span> <br/><br/></span>

@@ -1,0 +1,24 @@
+<h1 style="text-align: center;">if,if-else Conditions</h1>
+
+
+<h2>If Condition</h2>
+<p *ngIf="true">Hello world</p>
+
+<h2>If else Condition</h2>
+<p *ngIf="num%2==0; else elseblock">Even</p>
+
+<h2>Write a program whaether a number is Odd number or Even </h2>
+<span>Enter a Number : </span>
+<input type="number" #box (input)="setNumber(box.value)" placeholder="Enter a Number">
+
+<p *ngIf="num%2==0; then ifblock else elseblock"></p>
+
+
+<ng-template #ifblock>
+  <p>Even</p>
+</ng-template>
+<ng-template #elseblock >
+  <p>Odd</p>
+</ng-template>
+
+<!-- <p [ngIf]="true">Hello</p> -->

@@ -1,0 +1,21 @@
+.form{
+    margin-top: 20px;
+    box-shadow: 0 0 4px 2px white;
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    text-align: center;
+}
+input{
+    padding: 2px 5px;
+}
+button{
+    padding: 4px 10px;
+}
+table{
+    border: white;
+}

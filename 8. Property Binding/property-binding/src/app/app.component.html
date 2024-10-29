@@ -1,0 +1,45 @@
+<h1 style="text-align: center;"> Property Binding</h1>
+<p>Property binding in Angular helps you set values for properties of HTML elements or directives. Use property binding to do things such as toggle button features, set paths programmatically, and share values between components.</p>
+<table border="1px">
+  <tr>
+    <th>Features</th>
+    <th>Interpolation</th>
+    <th>Property Binding</th>
+  </tr>
+  <tr>
+    <td>syntax</td>
+    <td>&#123; &#123;expression&#125; &#125;</td>
+    <td>[property]="expression"</td>
+  </tr>
+  <tr>
+    <td>Use case </td>
+    <td>One-way binding for displaying data </td>
+    <td>One-way binding for setting an element's property</td>
+  </tr>
+  <tr>
+    <td>Data types </td>
+    <td>Handles strings and simple variables </td>
+    <td>Handles any valid JavaScript expressions</td>
+  </tr>
+  <tr>
+    <td>Dynamic updates </td>
+    <td>Automatically updates when data changes </td>
+    <td>Automatically updates when data changes</td>
+  </tr>
+  <tr>
+    <td>Angular Directive Support </td>
+    <td>Limited to built-in directives like ngIf, ngFor, etc. </td>
+    <td>Supports all directives including custom directives</td>
+  </tr>
+</table>
+<br><br>
+<span>Interpolation : </span>
+
+<!-- support number or string  -->
+<input type="text" #box name="Interpolation" placeholder="Interpolation" value={{name}} disabled={{disable}}>   
+<!-- take disable boolean value as string -->
+<br><br>
+
+<!-- support string or number or boolean -->
+<span>Property Binding : </span>
+<input type="text" name="property-binding" placeholder="Property Binding" [value]=name [disabled]=disable> 

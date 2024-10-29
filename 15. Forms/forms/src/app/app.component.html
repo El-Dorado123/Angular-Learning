@@ -1,0 +1,28 @@
+<h1 style="text-align: center;">Forms</h1>
+<!-- <p>First import FormsModule and Register in ts file.</p> -->
+<div class="form">
+  <form #basicForm="ngForm" (ngSubmit)="setData(basicForm.value)">
+    <!-- Name -->
+    <label for="name">Name :&nbsp;&nbsp;</label>
+    <input type="text" ngModel #name name="user" placeholder="Enter Your Name">
+    <br/>
+    <br/>
+    <!-- Email -->
+    <label for="email">Email :&nbsp;&nbsp;</label>
+    <input type="email" ngModel #email name="email" placeholder="Enter Your Email" >
+    <br/>
+    <br/>
+    <!-- Phone Number -->
+    <label for="number">Phone :&nbsp;&nbsp;</label>
+    <input type="number" ngModel #phone name="phone" placeholder="Enter Your Phone No">
+    <br/>
+    <br/>
+    <div class="button">
+      <button>Submit</button>
+    </div>
+  </form>
+</div>
+
+<p style="margin-top: 20px;"><b>Name : &nbsp;&nbsp;</b>{{userData.user}}</p>
+<p><b>Email : &nbsp;&nbsp;</b>{{userData.email}}</p>
+<p><b>Phone : &nbsp;&nbsp;</b>{{userData.phone}}</p>

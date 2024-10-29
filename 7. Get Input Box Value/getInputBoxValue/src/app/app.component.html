@@ -1,0 +1,19 @@
+<h1 style="text-align: center;">Get Input Box Value</h1>
+
+<input type="text" #box (input)="getData(box.value)" placeholder="Enter Name" name="UserName">
+<p>Box value is : {{userName}}</p>
+
+<br>
+<br>
+
+<h2 style="text-align: center;">Get Input Box Value using Button</h2>
+<input type="text" #box2  placeholder="Enter Name" name="UserName">
+<button (click)="getData(box2.value)">Click</button>
+<p>Box value is : {{userName}}</p>
+
+<h2 style="text-align: center;">Counter</h2>
+<div style="display: flex; justify-content: space-around; width: 50%; margin-inline: auto;">
+  <button (click)="increase()">+</button>
+  <span>Counter : {{counter}}</span>
+  <button (click)="decrease()">-</button>
+</div>
