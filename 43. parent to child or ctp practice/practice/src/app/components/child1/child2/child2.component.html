@@ -1,0 +1,7 @@
+<h2>Child 2</h2>
+<p>{{data}}</p>
+<p>{{name}}</p>
+<p>{{user}}</p>
+<app-child3 [child3_data]="data" [child3_name]="name" [func]="func1" (notify)="getdata($event)"></app-child3>
+<p>{{parent}}</p>
+<button (click)="senddata()">Child2</button>

@@ -1,0 +1,15 @@
+.form{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    padding: 20px;
+    box-shadow:0 0 20px 5px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

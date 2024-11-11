@@ -1,0 +1,10 @@
+<h1 style="text-align: center;">Reactive Forms</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginuser()">
+<input type="text" name="name" placeholder="Enter your Name" formControlName="user">
+<br><br>
+<input type="password" name="password" placeholder="Enter your password" formControlName="password">
+<br><br>
+<button>Login</button>
+</form>
+
+<!-- import ReactiveFormsModule  -->

@@ -1,0 +1,15 @@
+<h1 style="text-align: center;">Template Reference variable</h1>
+<p>Template reference variables give you a way to declare a variable that references a value from an element in your template. A template reference variable can refer to the following: a DOM element within a template (including custom elements) an Angular component or directive. </p>
+
+
+<input type="text" name="trv" placeholder="Enter anything" #box>
+<!-- Print input value  -->
+<!-- <button (click)="getVal(box.value)">Click Me</button> -->
+
+<!-- print name Attribute -->
+<!-- <button (click)="getVal(box.name)">Click Me</button> -->
+
+<!-- print placeholder -->
+<!-- <button (click)="getVal(box.placeholder)">Click Me</button> -->
+
+<button (click)="getVal(box)">Click Me</button>

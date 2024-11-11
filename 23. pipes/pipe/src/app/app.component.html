@@ -1,0 +1,24 @@
+<h1 style="text-align: center;">Pipes in Angular</h1>
+<p>Technically, pipes are simple functions designed to accept an input value, process, and return a transformed value as the output. Angular supports many built-in pipes. However, you can also create custom pipes that suit your requirements. Some salient features include: Pipes are defined using the pipe “|” symbol.</p>
+
+<h3>Uppercase</h3>
+<p>{{title | uppercase}}</p>
+<h3>Lowercase</h3>
+<p>{{title | lowercase}}</p>
+<h3>Date</h3>
+<p>{{date}}</p>
+<p>{{date | date}}</p>
+<p>{{date | date : 'fullDate'}}</p>
+<h3>Params and two pipes in one </h3>
+<p>{{data | slice : 0 : 7 | uppercase}}</p>
+<h3>Object</h3>
+<p>{{user}}</p>
+<p>{{user | json | uppercase}}</p>
+<h3>Number</h3>
+<p>{{2.300 | number : '2.2'}}</p>
+<h3>currency</h3>
+<p>{{200 | currency : 'USD'}}</p>
+<p>{{200 | currency : 'GBP'}}</p>
+<p>{{200 | currency : 'INR'}}</p>
+<h3></h3>
+<p>{{"how are you" | titlecase}}</p>

@@ -1,0 +1,69 @@
+<div class="login-container">
+  <div class="content">
+    <div class="form" *ngIf="get()">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" *ngIf="userloginregister==='register'">
+        <p *ngIf="err" style="color: red">User is Already Registered </p>
+        <h2 style="color: white; font-family:'popins',cursive;font-weight: bold; letter-spacing: 3px; margin-bottom: 10px;">Register</h2>
+        <div class="block">
+          <label for="name">Name </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            formControlName="username"
+          />
+        </div>
+        <div class="block">
+          <label for="email">Email </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            formControlName="useremail"
+          />
+        </div>
+        <div class="block">
+          <label for="password">Password </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            formControlName="userpassword"
+          />
+        </div>
+        <div class="block">
+          <button >Register</button>
+        </div>
+        <p style="color: white;">Already have Account ? <b style="color: skyblue;cursor: pointer;" (click)="Loginuser()">Login</b></p>
+      </form>
+      <form [formGroup]="lloginForm" (ngSubmit)="onLogin()" *ngIf="userloginregister==='login'">
+        <p *ngIf="err" style="color: red">Invalid Email or Password</p>
+        <h2 style="color: white; font-family:'popins',cursive;font-weight: bold; letter-spacing: 5px;margin-bottom: 20px;">Login</h2>
+        <div class="block">
+          <label for="email">Email </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            formControlName="useremail"
+          />
+        </div>
+        <div class="block">
+          <label for="password">Password </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            formControlName="userpassword"
+          />
+        </div>
+        <div class="block">
+          <button>Login</button>
+        </div>
+        <p style="color: white;">Don't have Account ? <b style="color: skyblue;cursor: pointer;" (click)="registeruser()">Register</b></p>
+
+      </form>
+    </div>
+  </div>
+</div>
+<app-header ></app-header>

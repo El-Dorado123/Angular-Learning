@@ -1,0 +1,48 @@
+<div class="login-container">
+  <div class="content">
+    <div class="form" *ngIf="get()">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <p *ngIf="err" style="color: red">Invalid Details</p>
+        <div class="block">
+          <label for="name">Name </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            formControlName="username"
+          />
+        </div>
+        <div class="block">
+          <label for="email">Email </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            formControlName="useremail"
+          />
+        </div>
+        <div class="block">
+          <label for="password">Name </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            formControlName="userpassword"
+          />
+        </div>
+        <div class="block">
+          <button>Login</button>
+        </div>
+      </form>
+    </div>
+    <div class="desc">
+      Rotten patatos is the world's most trusted recommendation resources for
+      quality entertainment . As the leading online aggregator of movie and TV
+      show reviews from critics. we provide fans with a comprehensive guide to
+      what's Fresh - and what' Rotten - in theaters and at home . if you're an
+      entertainment fan looking for a recommendation, or to share an opinion ,
+      you've come to the right place.
+    </div>
+  </div>
+</div>
+<app-header ></app-header>

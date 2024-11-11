@@ -1,0 +1,26 @@
+.header-container{
+    height: 15vh;
+    width: 100vw;
+    color: white;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+    font-family:'creepster', cursive;
+    position: absolute;
+    top: 0;
+    .logo{
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+    .logout{
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 15px;
+        border-radius: 5px 10px;
+        box-shadow: 0 0 5px 1px black;
+    }
+}

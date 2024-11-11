@@ -1,0 +1,48 @@
+.countries-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    border: 1px solid black;
+    background-color: rgb(31, 30, 30);
+    .countries{
+        height: 84vh;
+        width: 100%;
+        margin-inline: auto;
+        position: absolute;
+        top: 16vh;
+        h2{
+            text-align: center;
+            font-size: 30px;
+            // letter-spacing: 5px;
+            margin-block: 2%;
+            font-weight: bold;
+            color: white;
+            font-family: 'poppins',cursive;
+        }
+        .countries-cards{
+            height: 90%;
+            width: 80%;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+.card{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    border-radius: 10px;
+    img{
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+    }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center
+    };
+}

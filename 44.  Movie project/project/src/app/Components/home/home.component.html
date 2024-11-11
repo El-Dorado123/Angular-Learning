@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="countries-container">
+    <div class="countries">
+        <h2>countries Hub</h2>
+        <div class="countries-cards" >
+            <div class="card" *ngFor="let entry of objectEntries">
+                <img src={{entry[1].flags.svg}} alt="card">
+                <p>{{entry[1].name.common}}</p>
+                <p>Language : {{language[0][1]}}</p>
+            </div>
+        </div>
+    </div>
+</div>

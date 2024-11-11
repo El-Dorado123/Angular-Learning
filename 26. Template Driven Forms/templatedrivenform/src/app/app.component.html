@@ -1,0 +1,17 @@
+<h1 style="text-align: center;">Template Driven Forms</h1>
+<div class="form">
+<!-- <form (ngSubmit)="onSubmit(form.controls)" #form="ngForm"> -->
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)" >
+<input type="text" required #name="ngModel" name="name" placeholder="Enter your Name" ngModel>
+<br>
+<span *ngIf="name && name.invalid && name.touched">Name is required</span>
+<br><br>
+<input type="password" required #password="ngModel" name="password" placeholder="Enter your password" ngModel>
+<br>
+<span *ngIf="password && password.invalid && password.touched">password is required</span>
+<br><br>
+<button [disabled]="form.invalid">login</button>
+</form>
+</div>
+
+<button (click)="onSubmit(form.value)">Outside button</button>
